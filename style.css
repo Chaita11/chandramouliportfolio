@@ -22,8 +22,12 @@ body {
     display: flex;
     position: absolute;
     z-index: -99;
-    right: 0;
+    width: 100%;
     align-items: center;
+}
+
+.path svg{
+    margin: 0 auto;
 }
 
 @media only screen and (max-width:520px){
