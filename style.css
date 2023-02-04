@@ -1,0 +1,271 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: none;
+    scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,500&display=swap');
+
+body {
+    font-family: Poppins;
+}
+
+.landing-page-container {
+    display: flex;
+    max-height: 990px;
+    min-height: 840px;
+    justify-content: center;
+    align-items: center;
+}
+.path {
+    display: flex;
+    position: absolute;
+    z-index: -99;
+    right: 0;
+    align-items: center;
+}
+
+@media only screen and (max-width:520px){
+    .path{
+        display: none;
+    }
+}
+
+
+svg path {
+    stroke-dasharray: 500;
+    animation: dash 4s linear infinite;
+    background-size: contain;
+}
+@keyframes dash {
+    0% {
+        stroke-dashoffset: 1000;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.grid-container {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+}
+
+.container-about-section {
+    padding-bottom: 5rem;
+}
+
+.container-flex-box {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-title {
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+@media only screen and (max-width: 650px){
+ .grid-title{
+    font-size: 2rem;
+ }
+}
+
+
+@media only screen and (max-width:400px) {
+
+    .grid-title {
+        font-size: 2rem;
+    }
+
+}
+
+.grid-col {
+    font-weight: 300;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.600);
+}
+
+.click-here-link {
+    color: rgba(0, 0, 0, 0.600);
+    transition: 0.1s ease-in-out;
+}
+
+.click-here-link:hover{
+    color: #000;
+}
+
+.about-heading {
+    font-weight: 600;
+    text-decoration: underline;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    font-size: 3rem;
+}
+
+.about-section-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    padding: 0px 10px 0px 10px;
+}
+
+.info-about {
+    font-size: 1.5rem;
+    max-width: 845px;
+    font-weight: 400;
+    color: #000000a1;
+    text-align: center;
+}
+
+.img-about {
+    max-height: 350px;
+}
+
+@media only screen and (max-width:350px){
+.img-about{
+    max-height: 250px;
+}
+}
+
+.container-work-socials {
+    display: flex;
+    justify-content: center;
+    gap: 10.5rem;
+    padding: 10rem 10px 10rem 10px;
+    flex-wrap: wrap;
+
+}
+
+.work {
+    display: grid;
+    justify-items: center;
+}
+
+.work-heading {
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+.socials {
+    display: grid;
+    justify-items: center;
+}
+
+.socials-heading {
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+
+.bx-works {
+    min-width: 300px;
+    min-height: 100px;
+    border: 1px solid #000;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    transition: 0.15s ease-in-out;
+}
+
+@media only screen and (max-width: 440px){
+ .bx-works{
+    min-width: 200px;
+ }
+ .work-heading{
+    font-size: 3rem;
+ }
+ .socials-heading{
+    font-size: 3rem;
+ }
+
+}
+
+.bx-works:hover {
+    background-color: rgba(231, 231, 231, 0.37);
+}
+
+.bx-a {
+    text-decoration: none;
+    color: #000;
+}
+
+.container-footer {
+    padding: 2rem 0 2rem;
+    background: rgb(221 221 221 / 10%);
+}
+
+.container-footer-items-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+    padding: 0 10px 0 10px;
+    flex-wrap: wrap;
+}
+
+.container-useful-links {
+    display: grid;
+    gap: 5px;
+}
+
+.heading-useful-links {
+    font-size: 1.5rem;
+}
+
+.useful-links-col {
+    display: grid;
+    justify-items: center;
+    font-size: 0.9rem;
+    gap: 5px;
+}
+
+.useful-links{
+    color: rgba(0, 0, 0, 0.800);
+    text-decoration: none;
+    transition: 0.15s ease-in-out;
+}
+
+.container-contact-me {
+    display: grid;
+    gap: 5px;
+}
+
+.heading-contact-me {
+    font-size: 1.5rem;
+}
+
+.contact-me-col {
+    display: grid;
+    justify-items: center;
+    font-size: 0.9rem;
+    gap: 5px;
+}
+
+.contact-me-links{
+    color: rgba(0, 0, 0, 0.800);
+    text-decoration: none;
+    transition: 0.15s ease-in-out;
+}
+
+.useful-links:hover{
+    color: #000;
+}
+
+.contact-me-links:hover{
+    color: #000;
+}
