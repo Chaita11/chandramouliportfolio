@@ -182,7 +182,7 @@ svg path {
     align-items: center;
     border: 1px solid rgb(0, 0, 0);
     border-radius: 3px;
-    transition: 0.15s ease-in-out;
+    transition: 0.12s ease-in-out;
 }
 
 @media only screen and (max-width: 440px){
@@ -199,7 +199,7 @@ svg path {
 }
 
 .bx-works:hover {
-    background-color: rgba(231, 231, 231, 0.37);
+    background-color: rgb(212 209 209 / 34%);
 }
 
 .bx-a {
